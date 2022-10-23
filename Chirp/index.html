@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>chirp Landing Page</title>
 </head>
 <body>
@@ -12,9 +13,11 @@
         <div class="image"><img src="Assets/Hamburger Menu.svg" alt="menu"></div>
     </header>
 
-    <div class="heroImage">
-        <img src="Assets/Hero Image (Desktop View).png" alt="heroImage">
-    </div>
+    <picture>
+        <source media="(max-width:500px)" srcset="Assets/Hero Image (Desktop View).png">   
+        <source media="(min-width:650px)" srcset="Assets/Hero Image (Tablet View).png">
+        <img src="Assets/Hero Image (Desktop View).png" alt="HeroImage"  class="responsive">
+    </picture>
 
 </body>
 </html>
